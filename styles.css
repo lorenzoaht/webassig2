@@ -1,0 +1,91 @@
+
+/*MAIN*/
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #CBA265;
+}
+
+/*FORMATTING*/
+p {
+    position: relative;
+    top: -100px;
+}
+
+/*IMAGES*/
+.titlebackground {
+    font-weight: bold;
+    font-size: 70px;
+    background-color: #FC9E4F;
+    color: #544D4D;
+    padding: 10px 10px 10px 140px;
+    width: 620px;
+    position: relative;
+    left: -100px;
+    border-radius: 50px;
+    z-index: 10;
+}
+
+/*FORMS*/
+
+/*DROP DOWN MENU*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: 42px;
+    background-color: beige;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-btn {
+    background-color: #89BD9E;
+    color: rgb(233, 233, 233);
+    min-width: 45px;
+    position: relative;
+    top: -48px;
+    left: 60px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+p.arrow {
+    background-color: #89BD9E;
+    color: #89BD9E;
+    transform: rotate(45deg);
+    width: 100px;
+    position: relative;
+    top: -95px;
+    z-index: 0;
+}
+
+p.otherarrow {
+    background-color: #89BD9E;
+    color: #89BD9E;
+    transform: rotate(-45deg);
+    width: 100px;
+    position: relative;
+    top: -125px;
+    left: 62px;
+}
