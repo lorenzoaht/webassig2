@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
 /*MAIN*/
 a {
@@ -5,14 +9,41 @@ a {
 }
 
 header {
-    background-color: #CBA265;
+    background-color: #997135;
 }
 
 /*FORMATTING*/
-p {
+section {
     position: relative;
-    top: -100px;
+    top: -20px;
+    justify-content: center;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.column {
+    width: 500px;
+}
+
+@media only screen and (max-width:767px) {
+    .container {
+        display: flex;
+        justify-content: none;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1023px) {}
 
 /*IMAGES*/
 .titlebackground {
@@ -40,7 +71,7 @@ p {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: -50px;
+    top: 0px;
     left: 42px;
     background-color: beige;
     min-width: 200px;
@@ -63,8 +94,8 @@ p {
     color: rgb(233, 233, 233);
     min-width: 45px;
     position: relative;
-    top: -48px;
-    left: 60px;
+    top: -3px;
+    left: 62px;
     border: none;
     cursor: pointer;
     z-index: 1;
@@ -76,7 +107,7 @@ p.arrow {
     transform: rotate(45deg);
     width: 100px;
     position: relative;
-    top: -95px;
+    top: -35px;
     z-index: 0;
 }
 
@@ -86,6 +117,6 @@ p.otherarrow {
     transform: rotate(-45deg);
     width: 100px;
     position: relative;
-    top: -125px;
+    top: -49px;
     left: 62px;
 }
