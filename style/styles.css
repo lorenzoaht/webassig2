@@ -9,14 +9,14 @@ a {
 }
 
 header {
-    background-color: #997135;
+    background-color: #d98037;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
 
 header a {
-    display: block;       
+    display: block;
     width: 100%;
     box-sizing: border-box;
 }
@@ -24,7 +24,6 @@ header a {
 /*FORMATTING*/
 section {
     position: relative;
-    top: -20px;
     justify-content: center;
 }
 
@@ -39,10 +38,37 @@ section {
     width: 500px;
 }
 
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #89BD9E;
+    padding: 0px 0px 25px 10px;
+    flex-direction: column;
+    min-height: max-content;
+    text-decoration: none;
+}
+
+footer div {
+    padding: 15px 0px 0px 40px;
+    color: #ffffff;
+}
+
+li.top {
+    background-color: #544D4D;
+    right: 0;
+}
+
+p a {
+    background-color: #544D4D;
+    padding: 15px;
+    color:#ffffff;
+}
+
 @media only screen and (max-width:767px) {
+
     .container {
         display: flex;
-        justify-content: none;
+        align-items: center;
         gap: 40px;
         flex-direction: column;
     }
@@ -74,8 +100,8 @@ section {
     .titlebackground {
         font-size: 1.5rem;
         width: 100%;
-        left: 0;             
-        padding: 10px 16px;   
+        left: 0;
+        padding: 10px 16px;
         border-radius: 0;
         box-sizing: border-box;
     }
@@ -86,7 +112,7 @@ section {
 nav {
     background-color: #89BD9E;
     padding: 8px;
-    width: 100%;          
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -116,7 +142,7 @@ nav {
     display: block;
     padding: 12px 16px;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .nav-links a:hover {
@@ -124,8 +150,13 @@ nav {
     text-decoration: underline;
 }
 
+li.top a:hover {
+    background-color: #393535;
+    text-decoration: underline;
+}
+
 /* When checkbox is checked, show the menu */
-.menu-checkbox:checked ~ .nav-links {
+.menu-checkbox:checked~.nav-links {
     display: block;
 }
 
@@ -134,12 +165,8 @@ nav {
     .hamburger {
         display: none;
     }
+
     .nav-links {
         display: flex;
     }
 }
-
-
-
-
-
