@@ -109,7 +109,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
-    background-color: #f5f0e8;
+    background-color: #fdf6ec;
 }
 
 /* CONTENT - 1 column default (small screens) */
@@ -171,7 +171,7 @@ li.top a:hover {
 /* JALEN PAGE */
 body.jalen figure img {
     width: 100%;
-    max-height: 1000px;
+    max-height: 400px;
     object-fit: contain;
 }
 
@@ -217,7 +217,16 @@ body.jalen figure img {
 @media only screen and (min-width: 790px) {
 
     body {
-        background-color: #f5f0e8;
+        background-color: #fdf6ec;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 790px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     header {
