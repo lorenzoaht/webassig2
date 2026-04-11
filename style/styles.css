@@ -131,11 +131,28 @@ nav {
 }
 
 /* Menu hidden by default */
-.nav-links {
+.top-nav-links {
     display: none;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.top-nav-links a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.top-nav-links a:hover {
+    background-color: #6fa88a;
+    text-decoration: underline;
+}
+
+/* When checkbox is checked, show the menu */
+.menu-checkbox:checked~.top-nav-links {
+    display: block;
 }
 
 .nav-links a {
